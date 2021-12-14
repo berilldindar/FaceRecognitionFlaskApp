@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #111;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+
+<h2>İletişim</h2>
+<p>Kuzem'e bildirin.</p>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>İletişim İçin:</h2>
+    <p>Probleminizle alakalı bir mesaj bırakın!</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://www.w3schools.com/w3images/map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Adınız:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Soyadınız:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Şehir:</label>
+        <select id="country" name="country">
+          <option value="Ankara">Ankara</option>
+          <option value="Kırıkkale">Kırıkkale</option>
+          <option value="istanbul">İstanbul</option>
+        </select>
+        <label for="Konu">Konu</label>
+        <textarea id="Konu" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <a input type="submit" href="mailto:dindarberil@gmail.com" target="_blank">Submit</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    </div>
+    <div class="flip-card-back">
+      <h1>Beril Dindar</h1>
+      <p>Computer Engineering Student</p>
+      <p>Kırıkkale University</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

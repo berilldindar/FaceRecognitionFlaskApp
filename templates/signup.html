@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+    <style>
+    body {
+      background-color:#D3D3D3;
+    }
+
+    h1 {
+      color: black;
+      text-align: center;
+    }
+
+    p {
+      font-family: verdana;
+      font-size: 20px;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Signup Page</h1>
+    <form action="http://localhost:5000/signup" method="post">
+        <p>Username &emsp;&emsp;&emsp;&emsp;<input type="text" name="snm" /></p>
+        <p>Password &emsp;&emsp;&emsp;&emsp;&nbsp;<input type="password" name="spw" /></p>
+        <p>Confirm Password <input type="password" name="scpw" /></p>
+        <p><input type="submit" value="signup"></p>
+        <p><strong>{{message}}</strong></p>
+    </form>
+</body>
+</html>
