@@ -1,0 +1,8 @@
+face_recognition==1.3.0
+Flask==2.0.2
+imutils==0.5.4
+Pillow==8.4.0
+requests==2.25.1
+scikit_learn==1.0.1
+~pencv_python==4.5.1.48
+gunicorn
